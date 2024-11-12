@@ -27,32 +27,32 @@ import time
 # )
 
 # Your ACS resource connection string
-ACS_CONNECTION_STRING = "<ACS_CONNECTION_STRING>"
+ACS_CONNECTION_STRING = "endpoint=https://communications-resource2.unitedstates.communication.azure.com/;accesskey=8qRf70AaLUexh50KrQ5SWmqe2T1FWc5DDh4TRKYdf904blm2q7gfJQQJ99AJACULyCpRBuouAAAAAZCStpuW"
 
 # Cognitive service endpoint
-COGNITIVE_SERVICE_ENDPOINT="<COGNITIVE_SERVICE_ENDPOINT>"
+COGNITIVE_SERVICE_ENDPOINT="https://communications-resource2.unitedstates.communication.azure.com/"
 
 # Transport url
 TRANSPORT_URL = "<TRANSPORT_URL>"
 
 # Acs Phone Number
-ACS_PHONE_NUMBER="<ACS_PHONE_NUMBER>"
+ACS_PHONE_NUMBER="1-866-668-9132"
 
 # Transcription Locale
 LOCALE="<LOCALE>"
 
 # Agent Phone Number
-AGENT_PHONE_NUMBER="<AGENT_PHONE_NUMBER>"
+AGENT_PHONE_NUMBER="1-863-332-2851"
 
 # Callback events URI to handle callback events.
 CALLBACK_URI_HOST = "<CALLBACK_URI_HOST>"
 CALLBACK_EVENTS_URI = CALLBACK_URI_HOST + "/api/callbacks"
 
-HELP_IVR_PROMPT = "Welcome to the Contoso Utilities. To access your account, we need to verify your identity. Please enter your date of birth in the format DDMMYYYY using the keypad on your phone. Once we’ve validated your identity we will connect you to the next available agent. Please note this call will be recorded!"
+HELP_IVR_PROMPT = "Welcome to the Pizzano's Pizza and Grinders. To access your account, we need to verify your identity. Please enter your date of birth in the format DDMMYYYY using the keypad on your phone. Once we’ve validated your identity we will connect you to the next available agent. Please note this call will be recorded!"
 ADD_AGENT_PROMPT = "Thank you for verifying your identity. We are now connecting you to the next available agent. Please hold the line and we will be with you shortly. Thank you for your patience."
 INCORRECT_DOB_PROMPT = "Sorry, we were unable to verify your identity based on the date of birth you entered. Please try again. Remember to enter your date of birth in the format DDMMYYYY using the keypad on your phone. Once you've entered your date of birth, press the pound key. Thank you!"
 ADD_PARTICIPANT_FAILURE_PROMPT = "We're sorry, we were unable to connect you to an agent at this time, we will get the next available agent to call you back as soon as possible."
-GOODBYE_PROMPT = "Thank you for calling Contoso Utilities. We hope we were able to assist you today. Goodbye"
+GOODBYE_PROMPT = "Thank you for calling Pizzano's Pizza and Grinders. We hope we were able to assist you today. Goodbye"
 TIMEOUT_SILENCE_PROMPT = "I’m sorry, I didn’t receive any input. Please type your date of birth in the format of DDMMYYYY."
 GOODBYE_CONTEXT = "Goodbye"
 ADD_AGENT_CONTEXT = "AddAgent"
