@@ -7,9 +7,9 @@ with open("./inline-attachment.jpg", "rb") as file:
 with open("./inline-attachment.png", "rb") as file:
     png_b64encoded = base64.b64encode(file.read())
 
-connection_string = "<ACS_CONNECTION_STRING>"
-sender_address = "<SENDER_EMAIL_ADDRESS>"
-recipient_address = "<RECIPIENT_EMAIL_ADDRESS>"
+connection_string = "endpoint=https://communications-resource2.unitedstates.communication.azure.com/;accesskey=8qRf70AaLUexh50KrQ5SWmqe2T1FWc5DDh4TRKYdf904blm2q7gfJQQJ99AJACULyCpRBuouAAAAAZCStpuW"
+sender_address = "jeff@nomadbackoffice.com"
+recipient_address = "optiontrader91@gmail.com"
 
 POLLER_WAIT_TIME = 10
 
