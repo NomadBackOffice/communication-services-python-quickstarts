@@ -26,13 +26,13 @@ def send_sms(resource_endpoint, from_phone_number, to_phone_number, message_cont
 
 # You can find your endpoint and access key from your resource in the Azure portal
 # e.g. "https://<RESOURCE_NAME>.communication.azure.com";
-endpoint = "https://<RESOURCE_NAME>.communication.azure.com/"
+endpoint = "https://communications-resource2.unitedstates.communication.azure.com/"
 print("Retrieving new Access Token, using Managed Identities")
 result = create_identity_and_get_token(endpoint)
 print(f'Retrieved Access Token: {result.token}')
 
 print("Sending SMS using Managed Identities")
 # You will need a phone number from your resource to send an SMS.
-sms_result = send_sms(endpoint, "<FROM_NUMBER>", "<TO_NUMBER>", "Hello from Managed Identities")
+sms_result = send_sms(endpoint, "1-866-668-9132", "1-954-684-4791", "This is a test of the sms system. ")
 print(f'SMS ID: {sms_result[0].message_id}')
 print(f'Send Result Successful: {sms_result[0].successful}')
