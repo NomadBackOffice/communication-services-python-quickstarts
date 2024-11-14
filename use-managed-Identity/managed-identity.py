@@ -33,6 +33,6 @@ print(f'Retrieved Access Token: {result.token}')
 
 print("Sending SMS using Managed Identities")
 # You will need a phone number from your resource to send an SMS.
-sms_result = send_sms(endpoint, "1-866-668-9132", "1-954-684-4791", "This is a test of the sms system. ")
+sms_result = send_sms(endpoint, "+18666689132", "+19546844791", "This is a test of the sms system. ")
 print(f'SMS ID: {sms_result[0].message_id}')
 print(f'Send Result Successful: {sms_result[0].successful}')
