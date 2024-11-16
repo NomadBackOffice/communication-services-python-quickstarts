@@ -27,22 +27,22 @@ import time
 # )
 
 # Your ACS resource connection string
-ACS_CONNECTION_STRING = "endpoint=https://communications-resource2.unitedstates.communication.azure.com/;accesskey=8qRf70AaLUexh50KrQ5SWmqe2T1FWc5DDh4TRKYdf904blm2q7gfJQQJ99AJACULyCpRBuouAAAAAZCStpuW"
+ACS_CONNECTION_STRING = "<ACS_CONNECTION_STRING>"
 
 # Cognitive service endpoint
-COGNITIVE_SERVICE_ENDPOINT="https://communications-resource2.unitedstates.communication.azure.com/"
+COGNITIVE_SERVICE_ENDPOINT="<COGNITIVE_SERVICE_ENDPOINT>"
 
 # Transport url
 TRANSPORT_URL = "<TRANSPORT_URL>"
 
 # Acs Phone Number
-ACS_PHONE_NUMBER="1-866-668-9132"
+ACS_PHONE_NUMBER="<ACS_PHONE_NUMBER>"
 
 # Transcription Locale
 LOCALE="<LOCALE>"
 
 # Agent Phone Number
-AGENT_PHONE_NUMBER="1-863-332-2851"
+AGENT_PHONE_NUMBER="<AGENT_PHONE_NUMBER>"
 
 # Callback events URI to handle callback events.
 CALLBACK_URI_HOST = "<CALLBACK_URI_HOST>"
