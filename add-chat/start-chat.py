@@ -8,8 +8,8 @@ from azure.communication.chat import ChatParticipant
 try:
 	print('Azure Communication Services - Chat Quickstart')
 	# Create a chat client
-	endpoint = "https://communications-resource2.unitedstates.communication.azure.com/"
-	chat_client = ChatClient(endpoint, CommunicationTokenCredential("8qRf70AaLUexh50KrQ5SWmqe2T1FWc5DDh4TRKYdf904blm2q7gfJQQJ99AJACULyCpRBuouAAAAAZCStpuW"))
+	endpoint = "https://<RESOURCE_NAME>.communication.azure.com"
+	chat_client = ChatClient(endpoint, CommunicationTokenCredential("<Access Token>"))
 
 	# Start a chat thread
 	topic="test topic"
