@@ -6,7 +6,7 @@ try:
 	print("Azure Communication Services - Access Tokens Quickstart")
    
 	# This code demonstrates how to fetch your connection string from an environment variable.
-	connection_string = os.environ["COMMUNICATION_SERVICES_CONNECTION_STRING"]
+	connection_string = os.environ["COMMUNICATION_STRING"]
 
 	# Instantiate the identity client
 	client = CommunicationIdentityClient.from_connection_string(connection_string)
