@@ -8,8 +8,8 @@ from azure.communication.chat import ChatParticipant
 try:
 	print('Azure Communication Services - Chat Quickstart')
 	# Create a chat client
-	endpoint = "https://<RESOURCE_NAME>.communication.azure.com"
-	chat_client = ChatClient(endpoint, CommunicationTokenCredential("<Access Token>"))
+	endpoint = "COMMUNICATION_ENDPOINT"
+	chat_client = ChatClient(endpoint, CommunicationTokenCredential("COMMUNICATION_KEY"))
 
 	# Start a chat thread
 	topic="test topic"
@@ -55,7 +55,7 @@ try:
 	
 	# Add a user as a participant to the chat thread
 	# create 2 users
-	identity_client = CommunicationIdentityClient.from_connection_string('<connection_string>')
+	identity_client = CommunicationIdentityClient.from_connection_string('COMMUNICATION_STRING')
 	new_users = [identity_client.create_user() for i in range(2)]
 	
 	
