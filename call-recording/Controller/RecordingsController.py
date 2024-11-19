@@ -12,7 +12,7 @@ from azure.communication.callautomation import (
     ServerCallLocator)
 
 configuration_manager = ConfigurationManager.get_instance()
-connection_string = configuration_manager.get_app_settings("ACSResourceConnectionString")
+connection_string = configuration_manager.get_app_settings("COMMUNICATION_STRING")
 _client = CallAutomationClient.from_connection_string(connection_string)
 _call_connection_id = None
 _server_call_id = None
@@ -41,7 +41,7 @@ class RecordingsController():
         callback_url = configuration_manager.get_app_settings('CallbackUri') + "/api/callbacks"
         targetPhoneNumber = (str)(request.rel_url.query['targetPhoneNumber']).replace(" ", "+")
         target = PhoneNumberIdentifier(targetPhoneNumber)
-        caller_id = PhoneNumberIdentifier(configuration_manager.get_app_settings('ACSAcquiredPhoneNumber'))
+        caller_id = PhoneNumberIdentifier(configuration_manager.get_app_settings('COMMUNICATION_PHONE_NUMBER'))
         call_invite = CallInvite(target=target, source_caller_id_number=caller_id)
         response = _client.create_call(target_participant=call_invite,  callback_url=callback_url)
         global _call_connection_id
