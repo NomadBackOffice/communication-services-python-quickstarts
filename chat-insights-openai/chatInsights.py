@@ -2,8 +2,8 @@ from azure.communication.chat import ChatClient, CommunicationTokenCredential, C
 from azure.communication.identity import CommunicationIdentityClient, CommunicationUserIdentifier
 from datetime import datetime
 
-connection_string = "INSERT AZURE COMMUNICATION SERVICES CONNECTION STRING"
-endpoint = "INSERT AZURE COMMUNICATION SERVICES ENDPOINT"
+connection_string = "COMMUNICATION_STRING"
+endpoint = "COMMUNICATION_ENDPOINT"
 client = CommunicationIdentityClient.from_connection_string(connection_string)
 identity1 = client.create_user()
 token_result1 = client.get_token(identity1, ["chat"])
@@ -70,11 +70,11 @@ import requests
 import json
 import openai
 
-openai.api_key = "INSERT YOUR AZURE OPENAI API KEY"
-openai.api_base =  "INSERT YOUR AZURE OPENAI ENDPOINT" # your endpoint should look like the following https://YOUR_RESOURCE_NAME.openai.azure.com/
+openai.api_key = "OPENAI_KEY"
+openai.api_base =  "OPENAI_ENDPOINT" # your endpoint should look like the following https://YOUR_RESOURCE_NAME.openai.azure.com/
 openai.api_type = 'azure'
-openai.api_version = '2022-12-01' # this may change in the future
-deployment_name='INSERT YOUR DEPLOyMENT NAME' #This will correspond to the custom name you chose for your deployment when you deployed a model. 
+openai.api_version = '2024-07-18' # this may change in the future
+deployment_name='gpt-4o-mini' #This will correspond to the custom name you chose for your deployment when you deployed a model. 
 
 # Send a completion call to generate an answer
 start_phrase = 'For the following conversation, extract a topic, summary, highlights (1-3 bullet points of key information) and the sentiment of both of the users.\n\n' + prompt
