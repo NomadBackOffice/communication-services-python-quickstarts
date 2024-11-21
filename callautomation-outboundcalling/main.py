@@ -14,21 +14,21 @@ from azure.communication.callautomation import (
 from azure.core.messaging import CloudEvent
 
 # Your ACS resource connection string
-ACS_CONNECTION_STRING = "<ACS_CONNECTION_STRING>"
+ACS_CONNECTION_STRING = "COMMUNICATION_STRING"
 
 # Your ACS resource phone number will act as source number to start outbound call
-ACS_PHONE_NUMBER = "<ACS_PHONE_NUMBER>"
+ACS_PHONE_NUMBER = "COMMUNICATION_PHONE_NUMBER"
 
 # Target phone number you want to receive the call.
-TARGET_PHONE_NUMBER = "<TARGET_PHONE_NUMBER>"
+TARGET_PHONE_NUMBER = "USER_PHONE_NUMBER"
 
 # Callback events URI to handle callback events.
-CALLBACK_URI_HOST = "<CALLBACK_URI_HOST_WITH_PROTOCOL>"
+CALLBACK_URI_HOST = "CALLBACK_URI_HOST"
 CALLBACK_EVENTS_URI = CALLBACK_URI_HOST + "/api/callbacks"
-COGNITIVE_SERVICES_ENDPOINT = "<COGNITIVE_SERVICES_ENDPOINT>"
+COGNITIVE_SERVICES_ENDPOINT = "AZURE_AI_SEARCH_ENDPOINT"
 
 #(OPTIONAL) Your target Microsoft Teams user Id ex. "ab01bc12-d457-4995-a27b-c405ecfe4870"
-TARGET_TEAMS_USER_ID = "<TARGET_TEAMS_USER_ID>"
+#(I commented out this line) TARGET_TEAMS_USER_ID = "<TARGET_TEAMS_USER_ID>"
 
 TEMPLATE_FILES_PATH = "template"
 
@@ -44,7 +44,7 @@ CONFIRM_CHOICE_LABEL = "Confirm"
 CANCEL_CHOICE_LABEL = "Cancel"
 RETRY_CONTEXT = "retry"
 
-call_automation_client = CallAutomationClient.from_connection_string(ACS_CONNECTION_STRING)
+call_automation_client = CallAutomationClient.from_connection_string(COMMUNICATION_STRING)
 
 app = Flask(__name__,
             template_folder=TEMPLATE_FILES_PATH)
