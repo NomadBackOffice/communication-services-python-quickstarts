@@ -1,6 +1,6 @@
 from azure.communication.email import EmailClient
 
-connection_string = "endpoint=https://communications-resource2.unitedstates.communication.azure.com/;accesskey=8qRf70AaLUexh50KrQ5SWmqe2T1FWc5DDh4TRKYdf904blm2q7gfJQQJ99AJACULyCpRBuouAAAAAZCStpuW"
+connection_string = "COMMUNICATION_STRING"
 sender_address = "jeff@nomdbackoffice.com"
 recipient_address = "optiontrader91@gmail.com"
 replyto_address = "jeff@nomadbackoffice.com"
