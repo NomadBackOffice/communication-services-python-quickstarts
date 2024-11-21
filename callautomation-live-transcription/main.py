@@ -45,7 +45,7 @@ LOCALE="en-US"
 AGENT_PHONE_NUMBER="LIVE_AGENT_NUMBER"
 
 # Callback events URI to handle callback events.
-CALLBACK_URI_HOST = "<CALLBACK_URI_HOST>"
+CALLBACK_URI_HOST = "CALLBACK_URI_HOST"
 CALLBACK_EVENTS_URI = CALLBACK_URI_HOST + "/api/callbacks"
 
 HELP_IVR_PROMPT = "Welcome to the Pizzano's Pizza and Grinders. To access your account, we need to verify your identity. Please enter your date of birth in the format DDMMYYYY using the keypad on your phone. Once we’ve validated your identity we will connect you to the next available agent. Please note this call will be recorded!"
