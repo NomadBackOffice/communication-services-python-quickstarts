@@ -10,7 +10,7 @@ try:
     phoneNumber = sys.argv[1]
     
     # This code retrieves your connection string from an environment variable
-    connection_string = os.getenv('COMMUNICATION_SERVICES_CONNECTION_STRING')
+    connection_string = os.getenv('COMMUNICATION_STRING')
     try:
         phone_numbers_client = PhoneNumbersClient.from_connection_string(connection_string)
     except Exception as ex:
