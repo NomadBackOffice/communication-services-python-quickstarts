@@ -7,9 +7,9 @@ with open("./attachment.pdf", "rb") as file:
 with open("./attachment.txt", "rb") as file:
     txt_b64encoded = base64.b64encode(file.read())
 
-connection_string = "<ACS_CONNECTION_STRING>"
-sender_address = "<SENDER_EMAIL_ADDRESS>"
-recipient_address = "<RECIPIENT_EMAIL_ADDRESS>"
+connection_string = "COMMUNICATION_STRING"
+sender_address = "jeff@nomadbackoffice.com"
+recipient_address = "optiontrader91@gmail.com"
 
 POLLER_WAIT_TIME = 10
 
